@@ -1,0 +1,12 @@
+name: Environment Demo
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  env-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Environment Variable
+        run: echo "My Name is $NAME"
