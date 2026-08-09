@@ -9,4 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Environment Variable
-        run: echo "My Name is ${{ vars.NAME }}"
+        run: |
+          echo "My Name is ${{ vars.NAME }}"
+          echo "My Docker Password is ${{ secrets.DOCKER_PASSWORD }}"
