@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Environment Variable
-        run: echo "My Name is $NAME"
+        run: echo "My Name is ${{ vars.NAME }}"
